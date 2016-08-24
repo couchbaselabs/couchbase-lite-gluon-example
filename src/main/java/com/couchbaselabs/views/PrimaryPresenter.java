@@ -1,14 +1,14 @@
-package com.couchbase.views;
+package com.couchbaselabs.views;
 
-import com.couchbase.CouchbaseSingleton;
-import com.couchbase.Todo;
+import com.couchbaselabs.CouchbaseSingleton;
+import com.couchbaselabs.Todo;
 import com.couchbase.lite.Database;
 import com.couchbase.lite.Document;
+import com.couchbaselabs.gluon;
 import com.gluonhq.charm.glisten.application.MobileApplication;
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.mvc.View;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
-import com.couchbase.gluon;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

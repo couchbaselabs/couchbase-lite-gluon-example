@@ -1,18 +1,10 @@
-package com.couchbase;
+package com.couchbaselabs;
 
-import com.couchbase.views.PrimaryView;
-import com.couchbase.views.SecondaryView;
+import com.couchbaselabs.views.PrimaryView;
+import com.couchbaselabs.views.SecondaryView;
 import com.gluonhq.charm.glisten.application.MobileApplication;
-import com.gluonhq.charm.glisten.control.Avatar;
-import com.gluonhq.charm.glisten.control.NavigationDrawer;
-import com.gluonhq.charm.glisten.control.NavigationDrawer.Item;
-import com.gluonhq.charm.glisten.layout.layer.SidePopupView;
-import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
 import com.gluonhq.charm.glisten.visual.Swatch;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-
-import java.net.URL;
 
 
 public class gluon extends MobileApplication {

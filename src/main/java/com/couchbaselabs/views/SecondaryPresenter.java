@@ -1,14 +1,13 @@
-package com.couchbase.views;
+package com.couchbaselabs.views;
 
-import com.couchbase.CouchbaseSingleton;
+import com.couchbaselabs.CouchbaseSingleton;
+import com.couchbaselabs.Todo;
 import com.gluonhq.charm.glisten.animation.BounceInRightTransition;
 import com.gluonhq.charm.glisten.application.MobileApplication;
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.layout.layer.FloatingActionButton;
 import com.gluonhq.charm.glisten.mvc.View;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
-import com.couchbase.Todo;
-import com.couchbase.gluon;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;

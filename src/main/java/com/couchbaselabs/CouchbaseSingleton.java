@@ -1,11 +1,9 @@
-package com.couchbase;
+package com.couchbaselabs;
 
 import com.couchbase.lite.*;
 import com.couchbase.lite.replicator.Replication;
-import com.gluonhq.charm.down.common.JavaFXPlatform;
-import com.gluonhq.charm.down.common.PlatformFactory;
 import javafxports.android.FXActivity;
-import com.couchbase.lite.android.AndroidContext;
+//import com.couchbase.lite.android.AndroidContext;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -25,7 +23,8 @@ public class CouchbaseSingleton {
     private CouchbaseSingleton() {
         try {
             //this.manager = new Manager(new JavaContext("data"), Manager.DEFAULT_OPTIONS);
-            this.manager = new Manager(new AndroidContext(FXActivity.getInstance()), Manager.DEFAULT_OPTIONS);
+            //FXActivity test = FXActivity.getInstance();
+            this.manager = new Manager(new AndroidContext(getApplicationContext()), Manager.DEFAULT_OPTIONS);
             this.database = this.manager.getDatabase("fx-project");
             View todoView = database.getView("todos");
             todoView.setMap(new Mapper() {

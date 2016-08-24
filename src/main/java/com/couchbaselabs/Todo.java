@@ -1,4 +1,4 @@
-package com.couchbase;
+package com.couchbaselabs;
 
 import java.util.*;
 
