@@ -37,8 +37,6 @@ public class SecondaryPresenter {
         secondary.showingProperty().addListener((obs, oldValue, newValue) -> {
             if (newValue) {
                 AppBar appBar = MobileApplication.getInstance().getAppBar();
-                /*appBar.setNavIcon(MaterialDesignIcon.MENU.button(e ->
-                        MobileApplication.getInstance().showLayer(gluon.MENU_LAYER)));*/
                 appBar.setTitleText("Couchbase Todo - Create");
             }
         });

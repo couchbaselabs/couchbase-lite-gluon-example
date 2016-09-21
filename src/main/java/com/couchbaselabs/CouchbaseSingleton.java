@@ -35,9 +35,7 @@ public class CouchbaseSingleton {
     }
 
     public static CouchbaseSingleton getInstance() {
-        System.out.println("GETTING INSTANCE");
         if(instance == null) {
-            System.out.println("CREATING NEW COUCHBASE INSTANCE");
             instance = new CouchbaseSingleton();
         }
         return instance;

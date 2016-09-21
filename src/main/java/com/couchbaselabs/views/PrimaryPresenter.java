@@ -43,12 +43,6 @@ public class PrimaryPresenter {
                             @Override
                             public void run() {
                                 int documentIndex = indexOfByDocumentId(retrievedDocument.getId(), fxListView.getItems());
-                                for (int j = 0; j < fxListView.getItems().size(); j++) {
-                                    if (((Todo) fxListView.getItems().get(j)).getDocumentId().equals(retrievedDocument.getId())) {
-                                        documentIndex = j;
-                                        break;
-                                    }
-                                }
                                 if (retrievedDocument.isDeleted()) {
                                     if (documentIndex > -1) {
                                         fxListView.getItems().remove(documentIndex);
@@ -87,8 +81,6 @@ public class PrimaryPresenter {
         primary.showingProperty().addListener((obs, oldValue, newValue) -> {
             if (newValue) {
                 AppBar appBar = MobileApplication.getInstance().getAppBar();
-                /*appBar.setNavIcon(MaterialDesignIcon.MENU.button(e ->
-                        MobileApplication.getInstance().showLayer(gluon.MENU_LAYER)));*/
                 appBar.setTitleText("Couchbase Todo - List");
                 appBar.getActionItems().add(MaterialDesignIcon.ADD.button(e ->
                         MobileApplication.getInstance().switchView(gluon.SECONDARY_VIEW)
@@ -106,11 +98,6 @@ public class PrimaryPresenter {
             }
         }
         return result;
-    }
-    
-    @FXML
-    void buttonClick() {
-        label.setText("Hello JavaFX Universe!");
     }
     
 }
